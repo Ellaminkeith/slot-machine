@@ -1,5 +1,7 @@
-const winNumbers = [null, null, null];
+const winNumbers = [7, 7, 7];
 const playerCredits = 0;
-const winMessage = "Congrats, You WIN!";
-const loseMessage = "You Lost, Play Again!";
+const Message = "";
 
+let credits = 10;
+let spinning = false;
+let winning = false;
