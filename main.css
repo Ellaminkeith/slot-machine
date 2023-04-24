@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+
+.slot-machine {
+    margin: px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.boards {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 42px;
+    text-align: center;
+}
+
+.board1 {
+    margin: 5px auto;
+    border: 2px solid;
+    width: 100px;
+    height: 150px;
+}
+
+.board2 {
+    margin: 5px auto;
+    border: 2px solid;
+    width: 100px;
+    height: 150px;
+}
+
+.board3 {
+    margin: 5px auto;
+    border: 2px solid;
+    width: 100px;
+    height: 150px;
+}
