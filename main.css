@@ -13,7 +13,7 @@ h1 {
 }
 
 .boards {
-    display: inline-block;
+    display: block;
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
