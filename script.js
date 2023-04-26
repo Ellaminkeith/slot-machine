@@ -1,10 +1,13 @@
 const playerCredits = 0;
 const Message = "";
 
+let boardsNumbers;
 let credits = 20;
 let winning = false;
 
-const boards = document.querySelector(".boards");
+const board1 = document.querySelector(".board1");
+const board2 = document.querySelector(".board2");
+const board3 = document.querySelector(".board3");
 const spinBtn = document.querySelector(".spinBtn");
 const message = document.querySelector(".message");
 
@@ -15,32 +18,41 @@ function spinBoards() {
     return;
   }
 
-  let boardsNumbers = [];
+  boardsNumbers = [];
   for (let i = 0; i < 3; i++) {
     const generateNumbers = Math.floor(Math.random() * 9) + 1;
     boardsNumbers.push(generateNumbers);
-    // console.log(generateNumbers);
   }
-
-  if (boardsNumbers.length === 3) {
-    if (
-      boardsNumbers[0] === boardsNumbers[1] &&
-      boardsNumbers[1] === boardsNumbers[2]
-    ) {
-      winning = false;
-      credits += 1;
-      message.innerText = "Congrats, You WIN!";
-    } else {
-      winning = true;
-      credits -= 1;
-      message.innerText = "You Lost, Play Again!";
-    }
-    console.log(boardsNumbers);
+  render();
+  console.log("boardsNumbers", boardsNumbers);
+  if (
+    boardsNumbers[0] === boardsNumbers[1] &&
+    boardsNumbers[1] === boardsNumbers[2]
+  ) {
+    winning = false;
+    credits += 1;
+    message.innerText = "Congrats, You WIN!";
+  } else {
+    winning = true;
+    credits -= 1;
+    message.innerText = "You Lost, Play Again!";
   }
 }
 
-function playerCredits(boardsNumbers)
-if (credits === 0) {
-  playerCredits;
-  message.innerText = "No Credits, add more credits!";
+function render() {
+  board1.innerText = boardsNumbers[0];
+  board2.innerText = boardsNumbers[1];
+  board3.innerText = boardsNumbers[2];
+}
+
+function renderCredits() {
+  if (winning) {
+    playerCredits += 1;
+  } else {
+    playerCredits -= 1;
+  }
+}
+
+function renderMessage() {
+    
 }
