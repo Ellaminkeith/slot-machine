@@ -14,7 +14,7 @@ const creditsScore = document.querySelector(".playerCredits");
 
 resetBtn.addEventListener("click", resetGame);
 function resetGame() {
-  playerCredits = 0;
+  playerCredits = 20;
   message.innerText = "Play Again!";
   spinBtn.innetText = "Spin";
 }
