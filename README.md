@@ -1,6 +1,6 @@
 Slot Machine
 
-The number slot machine game is a simple slot game, the player tries to match three numbers to win. The game generates nine randome numbers. The player hit the "spin" button, and if they get three matching numbers in a row, you win.
+The slot machine game is a simple number game. The game generates nine randome numbers, the player hit the "spin" button, and if they get three matching numbers in a row, you win.
 
 
 Installation
