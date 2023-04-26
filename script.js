@@ -8,8 +8,16 @@ const board1 = document.querySelector(".board1");
 const board2 = document.querySelector(".board2");
 const board3 = document.querySelector(".board3");
 const spinBtn = document.querySelector(".spinBtn");
+const resetBtn = document.querySelector(".resetBtn");
 const message = document.querySelector(".message");
 const creditsScore = document.querySelector(".playerCredits");
+
+resetBtn.addEventListener("click", resetGame);
+function resetGame() {
+  playerCredits = 0;
+  message.innerText = "Play Again!";
+  spinBtn.innetText = "Spin";
+}
 
 spinBtn.addEventListener("click", spinBoards);
 function spinBoards() {
