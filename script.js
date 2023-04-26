@@ -15,7 +15,7 @@ const creditsScore = document.querySelector(".playerCredits");
 resetBtn.addEventListener("click", resetGame);
 function resetGame() {
   playerCredits = 30;
-  message.innerText = "Play Again!";
+  message.textContent = "Play Again!";
   spinBtn.innetText = "Spin";
   render();
 }
@@ -23,7 +23,7 @@ function resetGame() {
 spinBtn.addEventListener("click", spinBoards);
 function spinBoards() {
   if (playerCredits === 0) {
-    message.innerText = "Game Over. Please Try Again!";
+    message.textContent = "Game Over. Please Try Again!";
     return;
   }
 
@@ -40,14 +40,14 @@ function spinBoards() {
   ) {
     winning = true;
     playerCredits += 1;
-    message.innerText = "Congrats, You WIN!";
+    message.textContent = "Congrats, You WIN!";
     document.querySelector(".message").style.color = "red";
     // document.querySelector(".message").style.fontSize = "x-large";
     document.querySelector(".playerCredits").style.color = "red";
   } else {
     winning = false;
     playerCredits -= 1;
-    message.innerText = "You Lost, Play Again!";
+    message.textContent = "You Lost, Play Again!";
     document.querySelector(".message").style.color = "black";
     document.querySelector(".playerCredits").style.color = "black";
   }
@@ -55,9 +55,9 @@ function spinBoards() {
 }
 
 function render() {
-  board1.innerText = boardsNumbers[0];
-  board2.innerText = boardsNumbers[1];
-  board3.innerText = boardsNumbers[2];
-  creditsScore.innerText = playerCredits;
+  board1.textContent = boardsNumbers[0];
+  board2.textContent = boardsNumbers[1];
+  board3.textContent = boardsNumbers[2];
+  creditsScore.textContent = playerCredits;
   console.log(playerCredits);
 }
