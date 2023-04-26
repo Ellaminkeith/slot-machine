@@ -42,12 +42,14 @@ function spinBoards() {
     playerCredits += 1;
     message.innerText = "Congrats, You WIN!";
     document.querySelector(".message").style.color = "red";
-    // document.querySelector(".message").style.fontSize = 50;
+    // document.querySelector(".message").style.fontSize = "x-large";
+    document.querySelector(".playerCredits").style.color = "red";
   } else {
     winning = false;
     playerCredits -= 1;
     message.innerText = "You Lost, Play Again!";
     document.querySelector(".message").style.color = "black";
+    document.querySelector(".playerCredits").style.color = "black";
   }
   render();
 }
