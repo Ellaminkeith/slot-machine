@@ -42,7 +42,7 @@ function spinBoards() {
     playerCredits += 1;
     message.textContent = "Congrats, You WIN!";
     message.style.color = "red";
-    message.style.fontSize = "52px";
+    message.style.fontSize = "48px";
     creditsScore.style.color = "red";
   } else {
     winning = false;
