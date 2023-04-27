@@ -41,15 +41,16 @@ function spinBoards() {
     winning = true;
     playerCredits += 1;
     message.textContent = "Congrats, You WIN!";
-    document.querySelector(".message").style.color = "red";
-    // document.querySelector(".message").style.fontSize = "x-large";
-    document.querySelector(".playerCredits").style.color = "red";
+    message.style.color = "red";
+    message.style.fontSize = "42px";
+    creditsScore.style.color = "red";
   } else {
     winning = false;
     playerCredits -= 1;
     message.textContent = "You Lost, Play Again!";
-    document.querySelector(".message").style.color = "black";
-    document.querySelector(".playerCredits").style.color = "black";
+    message.style.fontSize = "24px";
+    message.style.color = "black";
+    creditsScore.style.color = "black";
   }
   render();
 }
