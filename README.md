@@ -5,8 +5,8 @@ The player starts with 30 credits and can press the "Spin" button to generate a 
 
 # Screenshots
 
-<img src="https://user-images.githubusercontent.com/38363464/235002006-6ce82908-e282-444c-bc50-26fe903e2864.png" width="270">
-<img src="https://user-images.githubusercontent.com/38363464/235001975-73633ffe-63a4-41fc-af64-12400a6b0305.png" width="295">
+<img src="https://user-images.githubusercontent.com/38363464/235002006-6ce82908-e282-444c-bc50-26fe903e2864.png" width="360">
+<img src="https://user-images.githubusercontent.com/38363464/235001975-73633ffe-63a4-41fc-af64-12400a6b0305.png" width="395">
 
 
 # Technologies Used
