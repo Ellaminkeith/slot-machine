@@ -20,7 +20,7 @@ function resetGame() {
   render();
 }
 
-let range = 9
+let range = 9;
 
 spinBtn.addEventListener("click", spinBoards);
 function spinBoards() {
