@@ -20,6 +20,8 @@ function resetGame() {
   render();
 }
 
+let range = 9
+
 spinBtn.addEventListener("click", spinBoards);
 function spinBoards() {
   if (playerCredits === 0) {
@@ -29,7 +31,7 @@ function spinBoards() {
 
   boardsNumbers = [];
   for (let i = 0; i < 3; i++) {
-    const generateNumbers = Math.floor(Math.random() * 9) + 1;
+    const generateNumbers = Math.floor(Math.random() * range) + 1;
     boardsNumbers.push(generateNumbers);
   }
   console.log("boardsNumbers", boardsNumbers);
